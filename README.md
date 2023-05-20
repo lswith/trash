@@ -16,5 +16,5 @@ trash /path/to/file
 You will need the swift compiler installed and in your `$PATH`.
 
 ```bash
-./install.sh
+sudo ./install.sh
 ```
