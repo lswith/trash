@@ -6,6 +6,5 @@ if [ "$#" -lt 1 ]; then
 fi
 
 for file in "$@"; do
-	echo "$file"
 	trash-file "$file"
 done

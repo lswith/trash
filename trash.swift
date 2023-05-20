@@ -6,16 +6,14 @@ func trashFile(atPath path: String) {
 
     do {
         try fileManager.trashItem(at: fileURL, resultingItemURL: nil)
-        print("Trashed: \(path)")
+        print("\(path)")
     } catch {
         print("Failed to trash: \(path)")
     }
 }
 
-// Usage: swift-trash.swift "path/to/file.txt"
-
 if CommandLine.arguments.count != 2 {
-    print("Usage: swift-trash.swift \"path/to/file.txt\"")
+    print("Usage: trash-file \"path/to/file.txt\"")
 } else {
     let filePath = CommandLine.arguments[1]
     trashFile(atPath: filePath)
